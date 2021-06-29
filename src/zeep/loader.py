@@ -2,11 +2,10 @@ import os.path
 import typing
 from urllib.parse import urljoin, urlparse, urlunparse
 
-from exceptions import DTDForbidden, EntitiesForbidden
+from zeep.exceptions import DTDForbidden, EntitiesForbidden, XMLSyntaxError
 from lxml import etree
 from lxml.etree import fromstring, XMLParser, XMLSyntaxError, Resolver
 
-from zeep.exceptions import XMLSyntaxError
 from zeep.settings import Settings
 
 
