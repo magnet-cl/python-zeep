@@ -3,7 +3,7 @@ from io import StringIO
 
 import pytest
 import requests_mock
-from exceptions import DTDForbidden, EntitiesForbidden
+from zeep.exceptions import DTDForbidden, EntitiesForbidden
 from lxml import etree
 from pretend import stub
 
